@@ -12,10 +12,10 @@
 
 <img src="./assets/screenshots/01.png" />
 
-<!-- Descrição do Projeto -->
-<p align="center">Projeto desenvolvido como desafio da Alura para praticar HTML, CSS criando um Portfolio.</p>
 
-<!-- Tabela de Conteúdos -->
+<p align="center">Projeto desenvolvido como desafio da Alura para praticar HTML, CSS, portfolio</p>
+
+
 ## Conteúdo
 
 - [Funcionalidades](#funcionalidades)
@@ -26,14 +26,14 @@
 - [Autor](#autor)
 - [Licença](#licença)
 
-<!-- Funcionalidades -->
+
 ## Funcionalidades
 
 - **Janela do Terminal:** Simula uma janela de terminal com bordas, botões de controle (fechar, minimizar, maximizar) e um cabeçalho com título.
 - **Entrada de Comando:** Permite ao usuário digitar comandos e exibe respostas simuladas.
 - **Estilo Visual:** Utilização de partículas no fundo e efeitos visuais para uma experiência mais imersiva.
 
-<!-- Tecnologias Utilizadas -->
+
 ## Tecnologias Utilizadas
 
 - **HTML:** Estrutura básica da página.
@@ -41,12 +41,7 @@
 - **JavaScript:** Interatividade e manipulação do DOM.
 - **SweetAlert2:** Para alertas personalizados (opcional).
 - **Particles.js:** Para criar um efeito de fundo animado.
+- **Plugins.js:** tilt para Efeito do Card
 
-<!-- Como Executar -->
-## Como Executar
-
-1. **Clone o Repositório:**
-
-   ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   ```
+>[!IMPORTANT]
+>os plugins que foram desenvolvidos nesse projeto são de autoria minha.

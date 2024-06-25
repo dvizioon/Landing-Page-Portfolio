@@ -18,6 +18,7 @@
 
 ## Conteúdo
 
+- [Veja o projeto Online](https://dvizioon.github.io/Landing-Page-Portfolio/)
 - [Funcionalidades](#funcionalidades)
 - [Prototipo](#Prototipo)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -26,10 +27,8 @@
 - [Licença](#licença)
 
 
-## Prototipo
-<img src="./assets/screenshots/02.png" />
-
-[Vizualizar Prototipo](https://www.figma.com/design/sKfIDQtCpQBgxcKQ9aLE8z/Landing-Page---Apresentation?node-id=1-11&t=9egWD1X4uUtHzQyU-1)
+## Ir para o Projeto 🔰
+[Vizualizar em Tempo Real](https://dvizioon.github.io/Landing-Page-Portfolio/)
 
 ## Funcionalidades
 
@@ -37,6 +36,10 @@
 - **Entrada de Comando:** Permite ao usuário digitar comandos e exibe respostas simuladas.
 - **Estilo Visual:** Utilização de partículas no fundo e efeitos visuais para uma experiência mais imersiva.
 
+## Prototipo
+<img src="./assets/screenshots/02.png" />
+
+[Vizualizar Prototipo](https://www.figma.com/design/sKfIDQtCpQBgxcKQ9aLE8z/Landing-Page---Apresentation?node-id=1-11&t=9egWD1X4uUtHzQyU-1)
 
 ## Tecnologias Utilizadas
 

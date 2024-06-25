@@ -1,0 +1,291 @@
+/* Aquivos de Fonts Locais Não Via CDN */
+@import url(../font/fonts.css);
+/* 
+    Globais São variaveis que podem 
+    ser acessados em Todo o Projetos
+    de Formas que podemos Mudar Dinamicamente 
+    assim alternado a estrutura mofologica do css
+    dos elementos.
+*/
+@import url(./globais.css);
+@import url(./mac.css);
+
+/* Container que Agrupa Todos os Elementos da Sessão */
+.container-card-landscape {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100%;
+    /* padding: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+}
+
+.group-card {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+}
+
+/* Container do Card Read Initial */
+.card-head {
+    font-family: var(--font-family);
+    font-weight: 400;
+    line-height: 3rem;
+    font-size: 1.4rem;
+}
+
+.card-head>h1 span {
+    color: var(--color-mask);
+}
+
+  /* Adicione aqui seu CSS personalizado */
+  .card-content {
+      font-family: var(--font-secondary);
+      font-weight: 300;
+      line-height: 2rem;
+      font-size: 1.3rem;
+      text-align: justify;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px 0;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+  }
+
+
+.card-actions {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+    /* background-color: aqua; */
+    width: 100%;
+    gap: 1rem;
+}
+
+.card-actions a{
+    width: 100%;
+    text-decoration: none;
+}
+
+/* Neon and 3D Hover Effect */
+.card-actions a button {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--mode-mask);
+    border: none;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-actions a button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 68, 255, 0.7), rgba(0, 255, 255, 0.7));
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: -1;
+}
+
+.card-actions a button:hover::before {
+    opacity: 1;
+}
+
+.card-actions a button:hover {
+    transform: translateY(-5px) rotateX(15deg) rotateY(15deg);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3), 0 0 25px rgba(0, 255, 255, 0.2);
+}
+
+.card-actions a button span{
+    color: var(--mode-moden);
+    font-size: 2rem;
+}
+
+.container-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* overflow: hidden; */
+    /* background-color: red; */
+    width: 100%;
+}
+
+.container-imagem>img {
+    width: var(--width-img);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+
+}
+
+/* Animação Neon */
+@keyframes neon-border {
+
+    0%,
+    100% {
+        box-shadow: 0 0 5px rgba(34, 212, 253, 0.5), 0 0 10px rgba(34, 212, 253, 0.4), 0 0 15px rgba(34, 212, 253, 0.3);
+        border-color: rgba(34, 212, 253, 1);
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(34, 212, 253, 0.5), 0 0 20px rgba(34, 212, 253, 0.4), 0 0 25px rgba(34, 212, 253, 0.3);
+        border-color: rgba(34, 212, 253, 0.8);
+    }
+}
+
+.container-imagem::after {
+    position: absolute;
+    /*background-color: aqua;
+    */
+    width: var(--width-img);
+    height: 100%;
+    display: inline-block;
+    content: '';
+    background: url(../assets/Fx/fx.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-position-y: 90%;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.container-imagem::before {
+    position: absolute;
+    /*background-color: aqua;
+    */
+    border: 3px solid rgba(34, 212, 253, 1);
+    width: var(--width-img);
+    height: 95%;
+    margin: -3rem -2rem 0 0;
+    display: inline-block;
+    content: '';
+    z-index: -1;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    animation: neon-border 2s infinite alternate;
+}
+
+
+
+/* Media Queries */
+
+
+@media (max-width: 999px) {
+    html {
+        font-size: 70%;
+    }
+
+    .container-card-landscape {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+        width: 100%;
+
+    }
+
+    .container-imagem>img {
+        width: var(--width-img-sm);
+
+
+    }
+
+    .container-imagem::after {
+        width: var(--width-img-sm);
+    }
+
+    .container-imagem::before {
+        width: var(--width-img-sm);
+    }
+
+    .card-head {
+        font-size: 100%;
+        text-align: center;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-head>h1 {
+        width: 70%;
+    }
+
+    .item:nth-of-type(1) {
+        order: 2;
+    }
+
+    .card-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container-card-landscape {
+        flex-direction: column;
+        gap: 1rem;
+        /* background-color: brown; */
+    }
+
+    .card-head>h1 {
+        width: 100%;
+    }
+
+    .container-imagem>img {
+        width: var(--width-img-xl);
+    }
+
+    .container-imagem::after {
+        width: var(--width-img-xl);
+    }
+
+    .container-imagem::before {
+        width: var(--width-img-xl);
+    }
+
+    .card-actions {
+        flex-direction: column;
+    }
+}

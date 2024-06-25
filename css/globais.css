@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-family:"Krona One",sans-serif;
+    --font-secondary:"Montserrat", sans-serif;
+
+    /* Background do landing */
+    --mode-dark:black;
+    --mode-ligth: rgb(255, 255, 255);
+    --mode-mask:rgba(34, 212, 253, 1);
+    --mode-moden:#2a2a2a;
+    /* Cor das Fonts */
+
+    --color-dark:black;
+    --color-light:rgb(255, 255, 255);
+    --color-mask:rgba(34, 212, 253, 1);
+
+    /* Item Fx - Imagem Ajuste */
+    --width-img:70%;
+    --width-img-sm: 60%;
+    --width-img-xl: 80%;
+}
+
+body{
+    background: var(--mode-moden);
+    position: relative;
+  
+}
+
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Pode ajustar a cor de fundo conforme necessário */
+    z-index: -999;
+    /* Certifique-se de que está atrás de todos os outros elementos */
+}
+
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--mode-moden);
+    /* inicia no modo escuro */
+    color: var(--color-light);
+    /* cor do texto no modo escuro */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.ligth-theme {
+    background-color: var(--mode-ligth);
+    color: var(--color-dark);
+}

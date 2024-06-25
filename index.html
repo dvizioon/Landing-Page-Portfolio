@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <title>Dvizioon</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <section>
+        <div id="terminalContainer" class="hidden">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="close-button"></div>
+                    <div class="minimize-button"></div>
+                    <div class="maximize-button"></div>
+                    <p>Daniel@Estevão</p>
+                </div>
+                <div class="terminal-body">
+
+                    <p>Digite 'help' para ver os comandos disponíveis.</p>
+                    <div class="command-line">
+                        <span class="prompt"><span class="mdi mdi-arrow-right-circle-outline"></span>Root:~$</span>
+                        <input type="text" id="userInput" autofocus>
+                    </div>
+                    <div id="terminalOutput"></div> <!-- Elemento para exibir o resultado dos comandos -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-card-landscape">
+        <!-- Divisoria do Conteudo Textual -->
+        <div class="group-card item">
+            <div class="card-head">
+                <h1>
+                    Eleve seu negócio digital a outro nível <span>com um Front-end de qualidade!</span>
+                </h1>
+            </div>
+
+            <div class="card-content">
+                <p>Olá! Sou Daniel Estevão, desenvolvedor Front-end com especialidade em React, HTML e CSS. Ajudo
+                    pequenos negócios e
+                    designers a colocarem em prática boas ideias. Vamos conversar?</p>
+            </div>
+            <div class="card-actions">
+                <a href="https://linkedin.com/in/danielestevão/" target="_blank" rel="noopener noreferrer">
+                    <button> <span class="mdi mdi-linkedin"></span> Linkedin</button>
+                </a>
+
+                <a href="https://github.com/dvizioon" target="_blank" rel="noopener noreferrer"><button> <span
+                            class="mdi mdi-github"></span>GitHub</button></a>
+
+            </div>
+
+        </div>
+
+        <!-- Divisoria da Imagem -->
+        <div class="container-imagem item">
+            <button id="openTerminal" class="cmd"><span class="mdi mdi-cogs engrenagem spin"></span></button>
+            <img id="avatar" src="./assets/Avata.jpeg" alt="avatar Daniel" />
+        </div>
+
+
+        <script src="./plugins/tilt.js"></script>
+        <script>
+            particlesJS.load('particles-js', 'json/particles.json', function () {
+                console.log('particles.json loaded...');
+            });
+        </script>
+
+    </section>
+
+    <script src="./js/cmd.js"></script>
+
+</body>
+
+</html>

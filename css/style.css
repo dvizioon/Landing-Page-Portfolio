@@ -83,7 +83,7 @@
 }
 
 /* Neon and 3D Hover Effect */
-.card-actions a button {
+.card-actions a  {
     font-family: var(--font-secondary);
     font-weight: 600;
     font-size: 1.1rem;
@@ -104,7 +104,7 @@
     gap: 0.5rem;
 }
 
-.card-actions a button::before {
+.card-actions a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -117,16 +117,16 @@
     z-index: -1;
 }
 
-.card-actions a button:hover::before {
+.card-actions a:hover::before {
     opacity: 1;
 }
 
-.card-actions a button:hover {
+.card-actions a:hover {
     transform: translateY(-5px) rotateX(15deg) rotateY(15deg);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3), 0 0 25px rgba(0, 255, 255, 0.2);
 }
 
-.card-actions a button span{
+.card-actions a span{
     color: var(--mode-moden);
     font-size: 2rem;
 }

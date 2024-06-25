@@ -18,7 +18,7 @@
 
 ## Conteúdo
 
-- [Veja o projeto Online](https://dvizioon.github.io/Landing-Page-Portfolio/)
+- [vizualizar projeto em tempo real](https://dvizioon.github.io/Landing-Page-Portfolio/)
 - [Funcionalidades](#funcionalidades)
 - [Prototipo](#Prototipo)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -101,9 +101,9 @@ esse plugin permite que um elemento da pagina seja totalmente titiltado ao ser t
 
 >[!WARNING]
 >Importante resaltar que esse plugin já existe no >Jquery criei a minha propia versão. dados não estão 
->tipado fortmente, se recomenda seguir a `doc` de tipos.
+>tipado fortemente, se recomenda seguir a `doc` de tipos.
 
-## Fonts ultilizadas
+## Fontes ultilizadas
 
 ```css
 /* latin-ext */
@@ -155,7 +155,7 @@ esse plugin permite que um elemento da pagina seja totalmente titiltado ao ser t
     },
 
 ```
->[!NOTA]
+>[!NOTE]
 >para entrar no cmd e testa é necessario vc clicar no botão que está girando 
 >![alt text](./assets/screenshots/03.png)
 
@@ -170,7 +170,7 @@ esse plugin permite que um elemento da pagina seja totalmente titiltado ao ser t
 </script>
 
 ```
->[!NOTA]
+>[!NOTE]
 >para usar alterar a estrutura morfologia do particles `json/particles.json`
 
 ## Licença
